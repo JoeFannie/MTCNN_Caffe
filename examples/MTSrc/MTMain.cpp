@@ -616,8 +616,9 @@ int main(int argc,char **argv)
     for(int j=0;j<5;j++)
       cv::circle(image,cv::Point(facePts.y[j],facePts.x[j]),1,cv::Scalar(255,255,0),2);
   }
-  cv::imshow("a",image);
-  cv::waitKey(0);
+  //cv::imshow("a",image);
+  //cv::waitKey(0);
+  cv::imwrite("./ret/test.jpg", image);
 
   return 1;
 }
